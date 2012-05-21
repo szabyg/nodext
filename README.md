@@ -191,7 +191,7 @@ Now the routes will have full JugglingDB access. For example:
       registerRoutes: (server) ->
         # The root route of this component serves a list of
         # posts
-        server.get "#{@config.urlPrefix}", (req, res) ->
+        server.get "#{@config.urlPrefix}", (req, res) =>
 
           # Use the extension's views directory
           server.set 'views', "#{__dirname}/views"
